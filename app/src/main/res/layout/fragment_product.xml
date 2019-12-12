@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/skin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal"
+                android:weightSum="5">
+                >
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="+"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/plus_minus_btn_fontsize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@drawable/item_box"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:textSize="@dimen/plus_minus_btn_fontsize"
+
+
+                    />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/plus_minus_btn_fontsize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:drawableRight="@drawable/add"
+                android:padding="@dimen/activity_vertical_margin"
+                android:text="@string/add_to_cart"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/component_top_margin"
+                android:text="@string/product_name"
+                android:textSize="@dimen/main_heading" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/component_top_margin"
+                android:text="@string/product_price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_heading"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/component_top_margin"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sub_heading"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/component_top_margin"
+                android:justificationMode="inter_word"
+                android:text="@string/lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book_it_has_survived_not_only_five_centuries_but_also_the_leap_into_electronic_typesetting_remaining_essentially_unchanged_it_was_popularised_in_the_1960s_with_the_release_of_letraset_sheets_containing_lorem_ipsum_passages_and_more_recently_with_desktop_publishing_software_like_aldus_pagemaker_including_versions_of_lorem_ipsum"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/most_viewed"
+                    android:textSize="@dimen/sub_heading"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_more"
+                    android:textSize="@dimen/sub_heading"
+                    android:textColor="@color/orange"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    />
+
+            </LinearLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_layout_height"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/card_width"
+                        android:layout_height="@dimen/card_height"
+                        android:background="@color/light_gray"
+                        android:elevation="@dimen/card_elevation"
+                        app:cardCornerRadius="@dimen/card_radius" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/card_width"
+                        android:layout_height="@dimen/card_height"
+                        android:layout_marginLeft="@dimen/card_margin_left"
+                        android:background="@color/light_gray"
+                        android:elevation="@dimen/card_elevation"
+                        app:cardCornerRadius="@dimen/card_radius" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/card_width"
+                        android:layout_height="@dimen/card_height"
+                        android:layout_marginLeft="@dimen/card_margin_left"
+                        android:background="@color/light_gray"
+                        android:elevation="@dimen/card_elevation"
+                        app:cardCornerRadius="@dimen/card_radius" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

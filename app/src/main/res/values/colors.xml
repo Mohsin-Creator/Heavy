@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>-->
+
+    <color name="colorPrimary">#263557</color>
+    <color name="colorPrimaryDark">#212E4B</color>
+    <color name="colorAccent">#F3B30B</color>
+
+    <color name="white">#ffffff</color>
+    <color name="light_blue">#00BCD4</color>
+    <color name="green">#3DA00D</color>
+    <color name="dark_blue">#172237</color>
+    <color name="yellow">#fbb602</color>
+    <color name="light_gray">#cecece</color>
+    <color name="orange">#FF5722</color>
+    <color name="black">#000000</color>
+
+
+    <!--OnBoard-->
+
+
+    <color name="selected_dot">#263557</color>
+    <color name="idle_dot">#662D9CDB</color>
+    <color name="ob_header">#4A4A4A</color>
+    <color name="ob_desc">#4A4A4A</color>
+
+</resources>
